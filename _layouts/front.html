@@ -34,7 +34,27 @@
       .bg-gray { background-color: #eeeeee; }
       .bg-yellow { background-color: #fec642; }
 
-      .banner { max-width: 390px; }
+      .banner { max-width: 390px; margin: 5px 0px 5px 0px;}
+
+
+
+      /* isommassa kuin mobiili */
+
+      @media screen and (min-width: 769px) {
+        .logo-container {max-width: 800px;}
+      }
+
+
+      /* mobiilikoossa */
+
+      @media screen and (max-width: 766px) {
+        .logo-container {max-width: 200px;}
+        /*.add-margin-in-mobile {margin-top: 30px;}*/
+      }
+
+
+      .logo-wrapper { max-width: 200px; margin: 10px 0px 10px 0px; }
+
 
 
     </style>
@@ -48,7 +68,7 @@
 
 
 
-    <!-- full height hero -->
+    <!-- LOGO HERO -->
 
 
     <section class="hero is-medium">
@@ -92,7 +112,7 @@
 
 
 
-    <!-- full height hero -->
+    <!-- CONTACT HERO -->
 
 
     <section class="hero is-fullheight bg-yellow" id="contact">
@@ -107,7 +127,7 @@
       <div class="hero-body">
         <div class="container has-text-centered">
 
-          <h1 class="title">Low Budget Oy</h2>
+          <h1 class="title is-1">Low Budget Oy</h2>
           
           <p>Y-tunnus: 2241245-2</p>
           
@@ -160,7 +180,7 @@
 
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
-        <div class="container has-text-centered">
+        <div class="container has-text-centered" style="max-width: 390px;">
           
           
           <div class="banner">
@@ -209,7 +229,6 @@
         <nav class="tabs is-boxed is-fullwidth">
           <div class="container">
           
-            <a href="#contact">...</a>
 
           </div>
         </nav>
@@ -222,61 +241,53 @@
 
 
 
-    <!-- MERITS -->
+    <!-- REFERENCES HERO -->
 
 
-    <section class="hero is-successi is-fullheight">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
 
-      </div>
+    <div class="container has-text-centered logo-container">
 
-      
 
-      <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
-        <div class="container has-text-centered">
+      <div class="columns">
+
+
+        <div class="column logo-wrapper">
           
-          <div>
-            <a href="http://www.yrittajat.fi/pirkanmaanyrittajat">
-              <img src="https://www.yrittajat.fi/sites/default/files/sy_jasenyritys_2017_200x100px.png" alt="pirkanmaan-yrittajat.png" />
-            </a>
-          </div>
-          
-          <div>
-            <a href="http://www.tampere.chamber.fi/">
-              <img src="img/tampereen_kauppakamari.jpg" alt="Tampereen kauppakamari" />
-            </a>
-          </div>
-          
-          <div>
-            <a href="https://www.tilaajavastuu.fi/?yt=2241245-2">
-              <img src="img/tilaajavastuu.png" alt="Tilaajavastuu" />
-            </a>
-          </div>
-
-          <div>
-            <a href="#">
-              <img src="img/aaa-logo.png" alt="AAA - Korkein luottoluokitus" />
-            </a>
-          </div>
-
-
+          <a href="http://www.yrittajat.fi/pirkanmaanyrittajat">
+            <img src="https://www.yrittajat.fi/sites/default/files/sy_jasenyritys_2017_200x100px.png" alt="pirkanmaan-yrittajat.png" />
+          </a>
+        
         </div>
-      </div>
 
-
-      <!-- Hero footer: will stick at the bottom -->
-      <div class="hero-foot">
-        <nav class="tabs is-boxed is-fullwidth">
-          <div class="container">
+        <div class="column logo-wrapper">
           
+          <a href="http://www.tampere.chamber.fi/">
+            <img src="img/tampereen_kauppakamari.jpg" alt="Tampereen kauppakamari" />
+          </a>
+        
+        </div>
 
-          </div>
-        </nav>
+        <div class="column logo-wrapper">
+        
+          <a href="https://www.tilaajavastuu.fi/?yt=2241245-2">
+            <img src="img/tilaajavastuu.png" alt="Tilaajavastuu" />
+          </a>
+        
+        </div>
+
+        <div class="column logo-wrapper">
+        
+          <a href="#">
+            <img src="img/aaa-logo.png" alt="AAA - Korkein luottoluokitus" />
+          </a>
+        
+        </div>
+
+
       </div>
 
-    </section>
+
+    </div>
 
 
 
@@ -287,7 +298,11 @@
 
 
 
-    <!-- full height hero -->
+
+
+
+
+    <!-- Invoicing information hero -->
 
 
     <section class="hero is-fullheight bg-gray">
